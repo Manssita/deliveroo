@@ -1,0 +1,51 @@
+body{
+  font-size: 14px;
+  color: #C4C6C6;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1, h2 {
+  color: #2E3333;
+}
+.logo {
+  width: 70%;
+}
+.visuel {
+  overflow: hidden;
+  max-height: 200px
+}
+.visuel img {
+  max-width: 300px;
+}
+.menuBlock{
+  margin-top: 20px;
+  background: #F8F9FA;
+  padding: 20px 0;
+}
+.menuBlock span{
+  padding: 0 5px;
+}
+.cart {
+  width: 400px;
+  min-height: 200px;
+  padding: 10px;
+  border: 1px solid #000;
+  position: absolute;
+  z-index: 1;
+  right: 15px;
+  margin-top: -65px;
+  background: #fff;
+}
+.cart .buttonFirst {
+  width: 100%;
+  background: #BAC3C3;
+  color: #8C9B9B;
+  border: none;
+}
+.cart .buttonFirst:hover{
+  background: #BAC3C3;
+  color: #8C9B9B;
+  cursor: default;
+}
+.imgItem {
+  width:80px;
+}
