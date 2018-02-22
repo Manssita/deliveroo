@@ -4,8 +4,8 @@ import Cart from './Cart';
 
 class MenuInlineAndCart extends React.Component {
   render() {
-    return [<MenuInline menu = {this.props.list} />,
-            <Cart 
+    return [<MenuInline key={"MenuInline"} menu = {this.props.list} />,
+            <Cart key={"Cart"} 
               selectedMenus={this.props.selectedMenus}
             />];
   }
