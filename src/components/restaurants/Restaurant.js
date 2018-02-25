@@ -17,7 +17,11 @@ class Restaurant extends React.Component {
           onSubMenu={this.props.onSubMenu}
           totalCart={this.props.totalCart}
         />
-        <Menu data={data} onAddMenu={this.props.onAddMenu} />
+        <Menu
+          selectedMenus={this.props.selectedMenus}
+          data={data}
+          onAddMenu={this.props.onAddMenu}
+        />
       </div>
     );
   }

@@ -15,6 +15,7 @@ class Menu extends React.Component {
                 <MenuBlock
                   menus={this.props.data.menu[keys[i]]}
                   onAddMenu={this.props.onAddMenu}
+                  selectedMenus={this.props.selectedMenus}
                 />
               </div>
             </div>

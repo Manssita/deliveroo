@@ -2,30 +2,6 @@ import React from "react";
 
 class Cart extends React.Component {
   render() {
-    console.log(this.props.totalCart);
-    // let total = 0;
-    // let subtotal = 0;
-    // let arrTotal = [];
-    // for (let i = 0; i < this.props.selectedMenus.length; i++) {
-    //   if (this.props.selectedMenus[i]) {
-    //     arrTotal.push(
-    //       this.props.selectedMenus[i].price * this.props.selectedMenus[i].qty
-    //     );
-    //   }
-    // }
-    // for (let j = 0; j < arrTotal.length; j++) {
-    //   if (arrTotal.length > 0) {
-    //     total = total + parseFloat(arrTotal[j]);
-    //   }
-    // }
-    // if (arrTotal.length > 0) {
-    //   subtotal = total;
-    //   if (subtotal === 0) {
-    //     total = 0;
-    //   } else {
-    //     total = total + this.props.shippingPrice;
-    //   }
-    // }
     if (this.props.totalCart === 0) {
       return (
         <div className="cart sticky-top">
@@ -52,11 +28,11 @@ class Cart extends React.Component {
               <div key={index} className="row cartItem">
                 <div className="col-lg-3 quantity">
                   <span onClick={() => this.props.onSubMenu(menu)}>
-                    <i class="far fa-minus-square on" />
+                    <i className="far fa-minus-square on" />
                   </span>
                   <span>{menu.qty} </span>
                   <span onClick={() => this.props.onAddMenu(menu)}>
-                    <i class="far fa-plus-square on" />
+                    <i className="far fa-plus-square on" />
                   </span>
                 </div>
                 <div className="col-lg-6">{menu.title}</div>

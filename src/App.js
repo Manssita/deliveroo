@@ -31,8 +31,6 @@ class App extends Component {
         {
           selectedMenus: [...this.state.selectedMenus, newMenu],
           totalCart: parseFloat(this.state.totalCart) + parseFloat(menu.price)
-          // totalCart:
-          //   this.state.totalCart + parseFloat(menu.price) * parseFloat(menu.qty)
         },
         () => {}
       );
@@ -46,8 +44,6 @@ class App extends Component {
         {
           selectedMenus: updatedMenus,
           totalCart: parseFloat(this.state.totalCart) + parseFloat(menu.price)
-          // totalCart:
-          //   this.state.totalCart + parseFloat(menu.price) * parseFloat(menu.qty)
         },
         () => {}
       );
